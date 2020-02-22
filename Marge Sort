@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-  int n, i = 3, count, c;
+  int n, i = 3, count, s;
 
   printf("Enter the number of prime numbers to print\n");
   scanf("%d", &n);
@@ -13,12 +13,12 @@ int main()
 
   for (count = 2; count <= n;)
   {
-    for (c = 2; c <= i - 1; c++)
+    for (s = 2; c <= i - 1; c++)
     {
-      if (i%c == 0)
+      if (i%s == 0)
         break;
     }
-    if (c == i)
+    if (s == i)
     {
       printf("%d\n", i);
       count++;
